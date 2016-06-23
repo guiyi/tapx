@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/1.5 \5b8b\4f53,tahoma,arial;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:12px;}
+ul,ol{list-style:none;}
+a{text-decoration:none; color:#333333;}
+a:hover{text-decoration:underline; color:#333333;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#333;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+img{ margin:0; padding:0;}
+
+.clear{
+	clear:both;
+}
+body{
+	overflow-x:hidden;
+}
+
+.header{
+	background:url(../images/banner01.png) no-repeat center 0px;
+	/*height:640px;*/
+	position:relative;
+}
+.topper{
+	background:url(../images/headBg.png) repeat-x;
+	height:179px;
+	position:relative;
+	z-index:2;
+}
+.top{
+	width:1000px;
+	margin:0 auto;
+}
+.topHead{}
+.logo{
+	float:left;
+	padding-top:25px;
+}
+.topHRight{
+	float:right;
+}
+.topLa{
+	background:url(../images/topBg.png) no-repeat;
+	width:143px;
+	height:33px;
+}
+.topLa a{
+	display:block;
+	color:#517182;
+	text-align:right;
+	padding-right:13px;
+	padding-top:2px;
+}
+.topHRight strong{
+	display:block;
+	font-weight:normal;
+	color:#fff;
+	font-family:"微软雅黑";
+	font-size:20px;
+	padding-top:20px;
+}
+.topHRight p{
+	color:#7b92a4;
+}
+.footHead{
+	padding-top:20px;
+}
+.nav{
+	float:left;
+}
+ul.navList{}
+ul.navList li{
+	float:left;
+	padding:0px 22px;
+	position:relative;
+	height:60px;
+}
+ul.navList li a{
+	color:#fff;
+	font-family:"微软雅黑";
+	font-size:14px;
+	display:block;
+	height:37px;
+}
+ul.navList li a:hover,ul.navList li a.active{
+	background:url(../images/navIcon.png) no-repeat 22px bottom;
+}
+ul.navList li a:hover{
+	text-decoration:none;
+}
+.search{
+	float:right;
+}
+.search input{
+	vertical-align:middle;
+	border:1px solid #58b3c1;
+	height:22px;
+	line-height:22px;
+	width:184px;
+	padding-left:6px;
+}
+.search button{
+	background:url(../images/searchBut.png) no-repeat;
+	width:24px;
+	height:25px;
+	cursor:pointer;
+	border:none;
+	vertical-align:middle;
+}
+/**/
+.footer{
+	background:#24689a url(../images/footBg.png) no-repeat center 0px;
+	margin-top:23px;
+	padding-bottom:30px;
+}
+.foot{
+	width:1000px;
+	margin:0 auto;
+}
+.footNav{
+	padding-top:13px;
+}
+.footNav p{
+	float:left;
+	width:115px;
+	margin:0px 30px;
+	display:inline;
+}
+.footNav strong{
+	font-weight:normal;
+	background:url(../images/footNavBg.png) no-repeat 0px bottom;
+	height:36px;
+	line-height:28px;
+	display:block;
+	color:#D3E782;
+	font-family:"微软雅黑";
+	font-size:16px;
+}
+.footNav a{
+	display:block;
+	color:#e6f8ff;
+	width:105px;
+	height:20px;
+	line-height:20px;
+	text-indent:5px;
+	margin-top:5px;
+}
+.footNav a:hover{
+	text-decoration:none;
+	background:#246993;
+}
+.footExp{
+	width:981px;
+	padding-top:10px;
+	margin:0 auto;
+}
+.fETitle{
+	background:url(../images/footTitleBg.png) no-repeat 0px bottom;
+	width:981px;
+	height:39px;
+	line-height:30px;
+	margin:0 auto;
+	color:#D3E782;
+	font-family:"微软雅黑";
+	font-size:16px;
+}
+.fETitle span{}
+.fECont{
+	padding-bottom:15px;
+}
+ul.fEList{}
+ul.fEList li{
+	float:left;
+	width:314px;
+	padding-bottom:5px;
+	padding-top:3px;
+	margin:0px 6px;
+	margin-top:8px;
+	display:inline;
+}
+ul.fEList li span{
+	display:block;
+	float:left;
+	color:#aac6d9;
+	font-family:"微软雅黑";
+	font-size:24px;
+	padding-left:7px;
+}
+.fEMain{
+	float:left;
+	width:284px;
+}
+.fEMain strong,.fEMain strong a{
+	font-weight:normal;
+	color:#D3E782;
+	font-size:14px;
+	display:block;
+	padding-top:3px;
+	padding-bottom:2px;
+}
+.fEMain p{
+	color:#aac6d9;
+	line-height:22px;
+}
+ul.fEList li.hover{
+	background:#20608c;
+}
+.Copyright{
+	background:#0a4e7b url(../images/copyBg.png) no-repeat center 0px;
+	height:45px;
+}
+.CopyMain{
+	width:1000px;
+	margin:0 auto;
+	line-height:45px;
+	color:#7dafea;
+}
+.CopyCont{
+	color:#7dafea;
+	float:left;
+}
+.CopyCont span{
+	color:#7dafea;
+}
+.CopyCont a{
+	color:#7dafea;
+}
+.footShare{
+	float:right;
+	padding-top:15px;
+}
+
+/**/
+.navHidden{
+	width:353px;
+	position:absolute;
+	top:30px;
+	left:20px;
+	display:none;
+}
+.navIcon{
+	background:url(../images/navIcon.png) no-repeat 0px top;
+	width:14px;
+	height:7px;
+	margin-left:26px;
+}
+.subNav{
+	width:353px;
+	background:url(../images/subNavBg.png) repeat;
+	margin-top:8px;
+}
+.subNLeft{
+	float:left;
+	width:106px;
+	padding-left:8px;
+	padding-top:13px;
+	padding-bottom:8px;
+}
+ul.navList li .subNLeft a{
+	height:25px;
+	line-height:25px;
+	color:#fff;
+	text-indent:8px;
+	margin-bottom:2px;
+	overflow:hidden;
+}
+ul.navList li .subNLeft a:hover{
+	background:#22a0cf;
+}
+.subPic{
+	float:right;
+	width:141px;
+	padding-right:15px;
+	padding-top:18px;
+	padding-bottom:18px;
+}
+.subPic img{
+	width:141px;
+	height:114px;
+}
+
+/**/
+.page{
+	text-align:center;
+	padding-top:38px;
+	padding-bottom:28px;
+}
+.page a{
+	display:inline-block;
+	height:30px;
+	line-height:30px;
+	color:#1b96c9;
+	background:#FFF;
+	border:1px solid #1b96c9;
+	font-size:14px;
+	padding:0px 10px;
+}
+.page a.pagePre{}
+.page a.pageNext{}
+.page a.active,.page a:hover{
+	background:#16a1c4;
+	border:1xp solid #16a1c4;
+	color:#fff;
+	text-decoration:none;
+}
+
+/*弹出框 隐藏*/
+.hidden_01{
+	width:704px;
+	position:absolute;
+	background:#2F2F2F;
+	padding-top:44px;
+	padding-bottom:44px;
+	border:1px solid #5F5F5F;
+	z-index:111;
+}
+a.close{
+	background:url(../images/close.gif) no-repeat;
+	width:30px;
+	height:28px;
+	display:block;
+	text-indent:-999em;
+	overflow:hidden;
+	text-align:center;
+	position:absolute;
+	right:5px;
+	top:5px;
+}
+.hidden01_cont{
+	width:600px;
+	margin:0 auto;
+}
+
+/**/
+.pLeft{
+	position:relative;
+}
+.pLeft img{}
+.pLA{}
+.pLA a{
+	height:144px;
+	display:block;
+	float:left;
+}
+.pLA a.pLA01{
+	width:444px;
+	background:url(../images/wrapLeft_01.jpg) no-repeat;
+}
+.pLA a.pLA02{
+	width:230px;
+	background:url(../images/wrapLeft_02.jpg) no-repeat;
+}
+
+

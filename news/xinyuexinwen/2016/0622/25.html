@@ -1,0 +1,446 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>php函数serialize()与unserialize()的使用方法及优势_她培训</title>
+<meta name="keywords" content="serialize，unserialize" />
+<meta name="description" content="php函数serialize()与unserialize() 一个是进行序列化存储，另一个则是进行序列化恢复" />
+
+    
+    <link type="text/css" rel="stylesheet" href="/css/yoanudin.css" />
+    <link type="text/css" rel="stylesheet" href="/css/css.css" />
+    <link type="text/css" rel="stylesheet" href="/css/header.css" />
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+
+
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="/js/ScrollPic.js"></script>
+    <script type="text/javascript" src="/js/base.js"></script>
+
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="/js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+    DD_belatedPNG.fix('a,a:hover,div,span,img,li');
+    </script>
+    <![endif]-->
+
+
+
+    
+
+</head>
+<body>
+   <form name="formsearch" method="post" action="/plus/search.php" id="aspnetForm">
+<div>
+<input type="hidden" name="q"  value="" />
+</div>
+
+        
+        
+<div class="header">
+	<!--topper-->
+	<div class="topper">
+    	<div class="top">
+            <div class="topHead">
+                <div class="logo">
+                   
+					 <h1><a href="www.wuhejia.com"><img src="/images/logo.png"  alt="她培训"/></a> </h1>
+                </div>
+                <div class="topHRight">
+                    <div class="topLa">
+                        <a href="/" target="_blank">PHP培训</a>
+                    </div>
+                    <strong>寻找优质的PHP培训 QQ:1214540818</strong>
+                    <!--<p>请咨询我们的专业顾问：QQ:1214540818</p>-->
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="footHead">
+                <div class="nav">
+                    <ul class="navList">
+                        <li>
+                            <a href="/" class="">主页</a>
+                        </li>
+                         <li>
+                                    <a href="/plus/list.php?tid=1">报名流程</a>
+                                    <div class="navHidden">
+                                        <div class="subNav">
+                                	        <div class="subNLeft">
+                                                 
+                                                        <a href="/plus/list.php?tid=2">PHP学员报名流程</a>
+                                                    
+                                                        <a href="/plus/list.php?tid=3">报名费用</a>
+                                                    
+                                                    
+                                            </div>
+                                            <div class="subPic">
+                                                <img alt="" src="/banner/20130729082608_1520.jpg" />
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                     <li>
+                                    <a href="/plus/list.php?tid=4">产品中心</a>
+                                    <div class="navHidden">
+                                        <div class="subNav">
+                                	        <div class="subNLeft">
+                                                 
+                                                        <a href="/plus/list.php?tid=5">她培训</a>
+                                                    
+                                                    
+                                            </div>
+                                            <div class="subPic">
+                                                <img alt="" src="/banner/20130803193541_0280.jpg" /> 
+<p>&nbsp;
+	
+</p>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                    
+                            
+                                    <li>
+                                    <a href="/plus/list.php?tid=16">关于她培训</a>
+                                    <div class="navHidden">
+                                        <div class="subNav">
+                                	        <div class="subNLeft">
+                                                 
+                                                        <a href="/plus/list.php?tid=17">企业概况</a>
+                                                    
+                                                        <a href="/plus/list.php?tid=19">荣誉资质</a>
+                                                    
+                                                    
+                                            </div>
+                                            <div class="subPic">
+                                                <img alt="" src="/banner/20130729084026_2165.jpg" />
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                  <li>
+                                    <a href="/plus/list.php?tid=22">最新新闻</a>
+                                    <div class="navHidden">
+                                        <div class="subNav">
+                                	        <div class="subNLeft">
+                                                 
+                                                        <a href="/plus/list.php?tid=23">她培训新闻</a>
+                                                    
+                                                        <a href="/plus/list.php?tid=24">行业动态</a>
+                                                    
+                                                    
+                                            </div>
+                                            <div class="subPic">
+                                                <img alt="" src="/banner/20130729082259_5407.jpg" /> 
+<p>&nbsp;
+	
+</p>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                    <li>
+                                    <a href="/plus/list.php?tid=25">联系我们</a>
+                                    <div class="navHidden">
+                                        <div class="subNav">
+                                	        <div class="subNLeft">
+                                            <a href="/plus/list.php?tid=25">联系方式</a>
+                                                 
+                                                    
+                                            </div>
+                                            <div class="subPic">
+                                                <img alt="" src="/banner/20130729083227_7233.jpg" />
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="search">
+                    <!--<input type="text" onblur="if(this.value==''){this.value=this.title;}this.style.color='#a2a1a1'" onfocus="if(this.value==this.title){this.value=''; } this.style.color='#a2a1a1';" title="搜素信息" value="搜素信息"  style="color:#a2a1a1;" name="q"/>
+                    <button type="image" src="/images/searchBut.png"></button>-->
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--topper结束-->
+
+
+</div>
+<!--广告，每个详细页都不一样的，不能统一拿出来-->
+<div class="aboutAdv" style="background:url(/images/ab_2.jpg) no-repeat center 0px;"></div>
+<!--调用顶部控件-->
+        
+<!---->
+<div class="detWrapper">
+	<!---->
+	<div class="site">
+    	<a href='www.wuhejia.com/'>主页</a> > <a href='/plus/list.php?tid=22'>最新新闻</a> > <a href='/plus/list.php?tid=23'>她培训新闻</a> >  
+    </div>
+    <!---->
+
+
+    <div class="newsDet">
+        <div class="NewsTitle">
+            <strong>php函数serialize()与unserialize()的使用方法及优势</strong>
+            <p>
+                <span>POST TIME:2016-06-22 15:42</span>
+                <span>READ: <script src="/plus/count.php?view=yes&aid=25&mid=1" type='text/javascript' language="javascript"></script></span>
+            </p>
+        </div>
+        <div class="ProDet">
+          <p>
+	<strong>php函数serialize()：</strong></p>
+<p>
+	这个函数作用就是序列化数据，返回一个可存储的字符串，该函数有利于存储或传递PHP的值，同时不丢失其类型和结构。所以我们在cms数据库里面经常看到这样的结构。</p>
+<p>
+	一般，我们将复杂或者数据量多而没有必要分开存储的数据封装成一个多维数组通过serialize()转成字符串，然后存进数据库，需要的时候再拿出来转成数组再用，而拿出了转成数组用的就是php的unserialize()，这两个函数的用法真是绝配，一个是进行序列化存储，另一个则是进行序列化恢复，方便极了<br />
+	<br />
+	<br />
+	<strong>CODE：</strong><br />
+	&lt;?php<br />
+	$a=array(&quot;她&quot;,&quot;培&quot;,&quot;训&quot;,&quot;芜&quot;,&quot;湖&quot;,&quot;www.wuhejia.com&quot;,&quot;php&quot;,&quot;专业培训&quot;);<br />
+	$b=serialize($a);<br />
+	<br />
+	echo &quot;Serialize&nbsp; ：&quot;;<br />
+	print_r($b);<br />
+	<br />
+	echo &quot;&lt;br/&gt;&quot;;<br />
+	$c=unserialize($b);<br />
+	<br />
+	echo &quot;Unserialize&nbsp; ：&quot;;<br />
+	print_r($c);<br />
+	?&gt;<br />
+	<br />
+	<br />
+	<br />
+	<strong>结果：<br />
+	<br />
+	Serialize ：a:8:{i:0;s:3:&quot;她&quot;;i:1;s:3:&quot;培&quot;;i:2;s:3:&quot;训&quot;;i:3;s:3:&quot;芜&quot;;i:4;s:3:&quot;湖&quot;;i:5;s:15:&quot;www.wuhejia.com&quot;;i:6;s:3:&quot;php&quot;;i:7;s:12:&quot;专业培训&quot;;}<br />
+	Unserialize ：Array ( [0] =&gt; 她 [1] =&gt; 培 [2] =&gt; 训 [3] =&gt; 芜 [4] =&gt; 湖 [5] =&gt; www.wuhejia.com [6] =&gt; php [7] =&gt; 专业培训 )</strong><br />
+	&nbsp;</p>
+
+        </div>
+        <!---->
+        <div class="DetBottom">
+            <div class="DetLeft">
+        上一篇：<a href='/plus/view.php?aid=4'>PHP专业培训机构 首选 她培训</a> </p>
+    下一篇：<a href='/news/xinyuexinwen/2016/0623/26.html'>PHP 实现代码复用的一个方法 traits新特性</a> 
+            </div>
+            <div class="DetRight">
+                <div class="DetShare">
+                    <div class="bshare-custom icon-medium"><div class="bsPromo bsPromo2"></div>
+                        <a title="分享到腾讯微博" class="bshare-qqmb" href="javascript:void(0);"></a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到朋友网" class="bshare-qqxiaoyou" href="javascript:void(0);"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到电子邮件" class="bshare-email" href="javascript:void(0);"></a><a title="分享到开心网" class="bshare-kaixin001" href="javascript:void(0);"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count" style="float: none;">15.5K</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                </div>
+                <p>呃，好文章总是百看不厌，耐人寻味，您也可以收藏分享哟 :)</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!---->
+    </div>
+
+
+        
+
+<!---->
+      <div class="part03">
+    	<!--滚动开始-->
+        <div class="try-c">
+            <a class="try-c-p" href="javascript:" title="上一个" onclick="iScroll('next','#TryCont')"></a>
+            <a class="try-c-n" href="javascript:" title="下一个" onclick="iScroll('prev','#TryCont')"></a>
+            
+            <div id="TryCont">
+                <ul>
+                    <li>
+                        <div class="auto_pro-1">
+                    <a href="#" target="_blank"><img src="/uploads/160604/1-160604113955456.jpg" alt="P8 ThinkPHP" /></a>
+<a href="#" target="_blank"><img src="/uploads/160604/1-160604113931943.jpg" alt="P7 redis" /></a>
+<a href="#" target="_blank"><img src="/uploads/160604/1-160604113Z4945.jpg" alt="P6 Linux" /></a>
+<a href="#" target="_blank"><img src="/uploads/160604/1-160604113T3945.jpg" alt="P5  PHP" /></a>
+<a href="#" target="_blank"><img src="/uploads/160604/1-160604113QW41.jpg" alt="P4 jQuery" /></a>
+
+            
+                            
+                                          </div>   
+                               </li> 
+                               <li>
+                                  <div class="auto_pro-1">
+                            
+                            <a href="#" target="_blank"><img src="/uploads/160604/1-160604113JQ05.jpg" alt="P3 JavaScript" /></a>
+<a href="#" target="_blank"><img src="/uploads/160604/1-160604113G4939.jpg" alt="P2 CSS3" /></a>
+<a href="#" target="_blank"><img src="/uploads/160604/1-1606041133235F.jpg" alt="P1 HTML5" /></a>
+
+                            
+                        </div>   
+                   </li>
+                </ul>
+            </div>
+        
+        </div>
+        <!--滚动结束-->
+    </div>
+    <div class="part01">
+    	<div class="pLeft">
+            <div class="pLA">
+            	<a class="pLA01" href="#" ></a>
+                <a class="pLA02" href="javascript:void(0)" onclick="getDialog('.hidden_01','/video.html')"></a>
+            </div>
+        </div>
+        <div class="pRight">
+        	<img src="/images/wrapWeixin.jpg" />
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!---->
+    
+    <!---->
+</div>
+
+
+
+<!---->
+  <div class="footer">
+	<div class="foot">
+    	<!---->
+    	<div class="footNav">
+        	<p>
+            	<strong>她培训</strong>
+                <a href="/plus/list.php?tid=2" target="_blank">PHP学员报名流程</a> <a href="/plus/list.php?tid=3" target="_blank">报名费用</a>
+             
+            </p>
+            <p>
+            	<strong>我们的产品中心</strong>
+                <a href="/plus/list.php?tid=5" target="_blank">她培训</a>
+            </p>
+            <p>
+            	<strong>服务与优势</strong>
+               
+            </p>
+            <p>
+            	<strong>走进我们</strong>
+         <a href="/plus/list.php?tid=17" target="_blank">企业概况</a> <a href="/plus/list.php?tid=19" target="_blank">荣誉资质</a>
+            </p>
+            <p>
+            	<strong>新闻动态</strong>
+                <a href="/plus/list.php?tid=23" target="_blank">她培训新闻</a> <a href="/plus/list.php?tid=24" target="_blank">行业动态</a>
+            </p>
+            <p>
+            	<strong>如何找到我们</strong>
+                <a href="/plus/list.php?tid=25" target="_blank">联系我们</a>
+              
+                <a href="#" target="_blank">电子地图</a>
+            </p>
+            <div class="clear"></div>
+        </div>
+        <!---->
+        <div class="footExp">
+        	<div class="fETitle">
+            	<span>我们取得的成绩</span>
+            </div>
+            <div class="fECont">
+            	<ul class="fEList">
+                    <li>
+                    	        <span>1.</span>
+                                <div class="fEMain">
+                        	        <strong><a href="/plus/view.php?aid=22" target="_blank">为什么选择她培训？</a></strong>
+                                    <p>•业内权威，名师面授，项目实战多，教学高渗透！...</p>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+<li>
+                    	        <span>2.</span>
+                                <div class="fEMain">
+                        	        <strong><a href="/plus/view.php?aid=21" target="_blank">她培训优势 五大培训模式</a></strong>
+                                    <p>“学”指讲师授课，
+“练”指实习老师实训指导，
+“用”指学...</p>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+<li>
+                    	        <span>3.</span>
+                                <div class="fEMain">
+                        	        <strong><a href="/plus/view.php?aid=19" target="_blank">走进她培训 专业培训PHPer</a></strong>
+                                    <p>专业团队打造精英队伍，团队有，项目优，硬件优，队伍才能优...</p>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+<li>
+                    	        <span>4.</span>
+                                <div class="fEMain">
+                        	        <strong><a href="/plus/view.php?aid=18" target="_blank">她培训件 PHP课程简介</a></strong>
+                                    <p>例如网站前端制作、数据库MySQL、PhpcmsV9企业站开发、ECShop商城开...</p>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+<li>
+                    	        <span>5.</span>
+                                <div class="fEMain">
+                        	        <strong><a href="/plus/view.php?aid=23" target="_blank">她培训 PHP的流行程度，巨大的市场需求</a></strong>
+                                    <p>目前，全球5000万互联网网站中，有60%以上使用着php技术。...</p>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+<li>
+                    	        <span>6.</span>
+                                <div class="fEMain">
+                        	        <strong><a href="/plus/view.php?aid=20" target="_blank">她培训 php培训寄语</a></strong>
+                                    <p>天行健，君子以自强不息。
+地势坤，君子以厚德载物。...</p>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+
+   
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!---->
+    </div>
+</div>
+
+  <div class="Copyright">
+	<div class="CopyMain">
+        <div class="CopyCont">
+            <span>Copyright (c) 2016 Sincere All Rights Reserved.浙ICP备05051968号 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a></span>
+            <a href="#" target="_blank">法律声明</a> |
+            <a href="#" target="_blank">网站地图</a> 
+          
+        </div>
+        <div class="footShare">
+        	<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=1&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<!--隐藏-->
+<div class="hidden_01" style="display:none;" id="hidden">
+	<a href="javascript:void(0)" class="close">关闭</a>
+	<div class="hidden01_cont">
+    	<iframe src="#" width="100%" height="450" id="iframepage" name="iframepage" align="middle" scrolling="no" frameborder="0"></iframe>
+    </div>
+</div><!--调用底部控件-->
+    </form>
+</body>
+</html>

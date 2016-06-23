@@ -1,0 +1,2 @@
+INSERT INTO `dede_addonimages` VALUES('1','5','2','800','{dede:pagestyle maxwidth=\'800\' pagepicnum=\'12\' ddmaxwidth=\'200\' row=\'3\' col=\'4\' value=\'2\'/}\r\n','3','4','1','200','12','','127.0.0.1','','抗衰老系列','','');
+INSERT INTO `dede_addonimages` VALUES('24','5','2','800','{dede:pagestyle maxwidth=\'800\' pagepicnum=\'12\' ddmaxwidth=\'200\' row=\'3\' col=\'4\' value=\'2\'/}\r\n','3','4','1','200','12','','127.0.0.1','','果萃有氧净化呼吸面膜','正常规格','深层补水 净化润白');

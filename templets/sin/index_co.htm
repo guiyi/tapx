@@ -1,0 +1,186 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+
+    
+    <link type="text/css" rel="stylesheet" href="/css/yoanudin.css" />
+    <link type="text/css" rel="stylesheet" href="/css/css.css" />
+    <link type="text/css" rel="stylesheet" href="/css/header.css" />
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+
+
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="/js/ScrollPic.js"></script>
+    <script type="text/javascript" src="/js/base.js"></script>
+
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="/js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+    DD_belatedPNG.fix('a,a:hover,div,span,img,li');
+    </script>
+    <![endif]-->
+
+
+
+    
+
+</head>
+<body>
+   <form name="formsearch" method="post" action="/plus/search.php" id="aspnetForm">
+<div>
+<input type="hidden" name="q"  value="" />
+</div>
+
+<div>
+
+	
+</div>  
+        
+        
+{dede:include filename='head.htm'/}  </form>
+<!--广告，每个详细页都不一样的，不能统一拿出来-->
+<div class="aboutAdv" style="background:url(/images/ab_15.jpg) no-repeat center 0px;"></div>
+<!--调用顶部控件-->
+        
+
+
+<!---->
+<div class="detWrapper">
+	<!---->
+	<div class="site">
+    	{dede:field name='position'/} 
+    </div>
+    <!--
+    <div class="contactWrap">
+    	<div class="contactTop">
+		{dede:field.content/}
+		</div>-->
+
+
+
+ <div class="contactWrap">
+    	<div class="contactTop">
+		<div class="contTTitle">
+	<strong>如何联系我们</strong>
+	<p>
+		您可以通过以下途径联系到我们，登录官方网站（www.wuhejia.com），查看联系方式，或者通过百度搜索她培训 PHP培训 找到我们。我们竭诚为您服务。</p>
+</div>
+<div class="contactDr">
+	<div class="contactDPart">
+		<strong>营销中心</strong>
+		<div class="contactCont">
+			<p>
+				营销中心地址：中国芜湖市高新技术开发区江南大道3880号华荣时代大厦17楼<br />
+				QQ： 1214540818  邮箱：1214540818@qq.com<br />
+				</p>
+		</div>
+	</div>
+	
+	<div class="clear">
+		&nbsp;</div>
+</div>
+
+		</div>
+
+
+        <div class="contactFoot"><form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+        	<div class="contForm">
+            	<strong>在线留言</strong>
+            	<ul class="contactForm">
+                	<li>
+                    	<label>姓  名：</label>
+                        <input name="name" type="text" />
+                    </li>
+                    <li>
+                    	<label>电  话：</label>
+                        <input name="phone" type="text" />
+                    </li>
+                    <li>
+                    	<label>单  位：</label>
+                        <input name="unit" type="text" />
+                    </li>
+                    <li>
+                    	<label>E-mail:</label>
+                        <input name="email" type="text" />
+                    </li>
+                    <li>
+                    	<label>留   言:</label>
+                        <textarea name="texts"></textarea>
+                    </li>
+                    <li>
+                        <label>验证码：</label>
+                       <input name="validate" type="text" id="vdcode" style="text-transform:uppercase;" size="8"/> 
+<img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="../include/vdimgck.php"/>  
+<a href="javascript:vide(-1);" onClick="changeAuthCode();">看不清？ </a> 
+               
+
+                    </li><input type="hidden" name="dede_fields" value="name,text;phone,text;unit,text;email,text;texts,multitext" />
+<input type="hidden" name="dede_fieldshash" value="1e89700b929338aab19b157de2f27b17" />
+                    <li>
+                    	<label>&nbsp;</label>
+                        <input type="submit"  value="提 交" id="ctl00_ContentPlaceHolder1_Button1" />
+                    </li>
+                </ul>
+            </div></form>
+            <div class="contMap">
+            	
+
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+
+
+        
+
+<!---->
+      {dede:include filename='bo.htm'/}
+    <!---->
+    
+    <!---->
+</div>
+
+
+
+<!---->
+  {dede:include filename='footer1.htm'/}
+
+  {dede:include filename='footer.htm'/}
+
+<!--隐藏-->
+<div class="hidden_01" style="display:none;" id="hidden">
+	<a href="javascript:void(0)" class="close">关闭</a>
+	<div class="hidden01_cont">
+    	<iframe src="#" width="100%" height="450" id="iframepage" name="iframepage" align="middle" scrolling="no" frameborder="0"></iframe>
+    </div>
+</div><!--调用底部控件-->
+
+</body>
+</html>
+<script type="text/javascript" language="javascript">
+//验证码 
+function changeAuthCode() { 
+    var num =     new Date().getTime();
+    var rand = Math.round(Math.random() * 10000);
+    num = num + rand;
+    $('#ver_code').css('visibility','visible');
+    if ($("#vdimgck")[0]) {
+        $("#vdimgck")[0].src = "../include/vdimgck.php?tag=" + num;
+    }
+    return false;    
+}
+</script>

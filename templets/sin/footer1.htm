@@ -1,0 +1,58 @@
+<div class="footer">
+	<div class="foot">
+    	<!---->
+    	<div class="footNav">
+        	<p>
+            	<strong>她培训</strong>
+               {dede:channel typeid='1'} <a href="[field:typelink/]" target="_blank">[field:typename/]</a>{/dede:channel}
+             
+            </p>
+            <p>
+            	<strong>我们的产品中心</strong>
+               {dede:channel typeid='4'} <a href="[field:typelink/]" target="_blank">[field:typename/]</a>{/dede:channel}
+            </p>
+            <p>
+            	<strong>服务与优势</strong>
+               {dede:channel typeid='11'} <a href="[field:typelink/]" target="_blank">[field:typename/]</a>{/dede:channel}
+            </p>
+            <p>
+            	<strong>走进我们</strong>
+        {dede:channel typeid='16'} <a href="[field:typelink/]" target="_blank">[field:typename/]</a>{/dede:channel}
+            </p>
+            <p>
+            	<strong>新闻动态</strong>
+               {dede:channel typeid='22'} <a href="[field:typelink/]" target="_blank">[field:typename/]</a>{/dede:channel}
+            </p>
+            <p>
+            	<strong>如何找到我们</strong>
+                {dede:type typeid='25'} <a href="[field:typelink/]" target="_blank">[field:typename/]</a>{/dede:type}
+              {dede:channel typeid='25'} <a href="[field:typelink/]" target="_blank">[field:typename/]</a>{/dede:channel}
+                <a href="#" target="_blank">电子地图</a>
+            </p>
+            <div class="clear"></div>
+        </div>
+        <!---->
+        <div class="footExp">
+        	<div class="fETitle">
+            	<span>我们取得的成绩</span>
+            </div>
+            <div class="fECont">
+            	<ul class="fEList">
+                    {dede:arclist typeid='28' row='6'}
+                            <li>
+                    	        <span>[field:global.autoindex/].</span>
+                                <div class="fEMain">
+                        	        <strong><a href="[field:arcurl/]" target="_blank">[field:fulltitle/]</a></strong>
+                                    <p>[field:info function="cn_substr(@me,80)"/]...</p>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            {/dede:arclist}
+   
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!---->
+    </div>
+</div>

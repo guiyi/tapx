@@ -1,0 +1,125 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+
+    
+    <link type="text/css" rel="stylesheet" href="/css/yoanudin.css" />
+    <link type="text/css" rel="stylesheet" href="/css/css.css" />
+    <link type="text/css" rel="stylesheet" href="/css/header.css" />
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+
+
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="/js/ScrollPic.js"></script>
+    <script type="text/javascript" src="/js/base.js"></script>
+
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="/js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+    DD_belatedPNG.fix('a,a:hover,div,span,img,li');
+    </script>
+    <![endif]-->
+
+
+
+    
+
+
+</head>
+<body>
+   <form name="formsearch" method="post" action="/plus/search.php" id="aspnetForm">
+<div>
+<input type="hidden" name="q"  value="" />
+</div>
+
+        
+        
+{dede:include filename='head.htm'/}
+<!--广告，每个详细页都不一样的，不能统一拿出来-->
+<div class="aboutAdv" style="background:url(/images/ab_3.jpg) no-repeat center 0px;"></div>
+<!--调用顶部控件-->
+        
+
+
+<!---->
+<div class="detWrapper">
+	<!---->
+	<div class="site">
+    {dede:field name='position'/} 
+    </div>
+    <!---->
+    <div class="picDet">
+    	<!---->
+    	<div class="picDTop">
+        	<div class="picDPic">
+            	<img src="{dede:field.litpic/}" />
+            </div>
+            <div class="picDText">
+            	<p>商品名称：{dede:field.title/}</p>
+                <p>所属类别：{dede:field.typename/}</p>
+                <p>浏览次数：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script> 次</p>
+    
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!---->
+        <div class="picDTitle">
+        	<span>参数介绍</span>
+        </div>
+        <div class="picDCont">
+        	{dede:field.body/}
+        </div>
+        <!---->
+        <div class="DetBottom">
+            <div class="DetLeft">
+              {dede:prenext get='pre'/}
+              {dede:prenext get='next'/}
+            </div>
+            <div class="DetRight">
+                <div class="DetShare">
+                    <div class="bshare-custom icon-medium"><div class="bsPromo bsPromo2"></div>
+                    	<a title="分享到腾讯微博" class="bshare-qqmb" href="javascript:void(0);"></a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到朋友网" class="bshare-qqxiaoyou" href="javascript:void(0);"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到电子邮件" class="bshare-email" href="javascript:void(0);"></a><a title="分享到开心网" class="bshare-kaixin001" href="javascript:void(0);"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count" style="float: none;">15.5K</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                </div>
+                <p>呃，好文章总是百看不厌，耐人寻味，您也可以收藏分享哟 :)</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!---->
+    </div>
+    
+
+        
+
+<!---->
+    {dede:include filename='bo.htm'/}
+    <!---->
+    
+    <!---->
+</div>
+
+
+
+<!---->
+{dede:include filename='footer1.htm'/}
+
+{dede:include filename='footer.htm'/}
+
+<!--隐藏-->
+<div class="hidden_01" style="display:none;" id="hidden">
+	<a href="javascript:void(0)" class="close">关闭</a>
+	<div class="hidden01_cont">
+    	<iframe src="#" width="100%" height="450" id="iframepage" name="iframepage" align="middle" scrolling="no" frameborder="0"></iframe>
+    </div>
+</div><!--调用底部控件-->
+    </form>
+</body>
+</html>
